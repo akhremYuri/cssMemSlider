@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 30px 0; 
+  background-color: rgb(48, 46, 46);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.slide {
+  width: 1100px;
+  height: 700px;
+  border-radius: 10px; 
+}
+
+.slider-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-description {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(75, 75, 155);
+  border: 2px solid rgb(75, 75, 155);
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.active {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.dot:hover.active:hover {
+  background-color: transparent;
+  border: 2px solid rgb(75, 75, 155);
+}
+
+.dot:hover {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
