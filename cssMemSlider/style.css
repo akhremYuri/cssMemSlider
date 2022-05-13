@@ -34,6 +34,11 @@ body {
   align-items: center;
 }
 
+.slide-desc-wrapper {
+  width: 600px;
+  overflow: hidden;
+}
+
 .slide-description {
   font-size: 2.5rem;
   color: #ffffff;
@@ -48,6 +53,7 @@ body {
   cursor: pointer;
   border-radius: 50%;
   margin-right: 15px;
+  transition: background-color 1s, border 1s;
 }
 
 .active {
@@ -63,4 +69,41 @@ body {
 .dot:hover {
   background-color: #ffffff;
   border: 2px solid #ffffff;
+}
+
+.slidein {
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.opacityoff {
+  animation-duration: 1s;
+  animation-name: opacityoff;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes opacityoff {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+
 }
