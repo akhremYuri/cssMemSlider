@@ -13,6 +13,7 @@ body {
 
 .container {
   max-width: 1140px;
+  width: 100%;
   margin: auto;
   padding: 0 20px;
 }
@@ -23,8 +24,8 @@ body {
 }
 
 .slide {
-  width: 1100px;
-  height: 700px;
+  max-width: 100%;
+  max-height: 700px;
   border-radius: 10px; 
 }
 
@@ -35,13 +36,23 @@ body {
 }
 
 .slide-desc-wrapper {
-  width: 600px;
+  max-width: 600px;
   overflow: hidden;
 }
 
 .slide-description {
   font-size: 2.5rem;
   color: #ffffff;
+}
+
+@media (max-width: 780px){
+  .slider-details {
+    flex-direction: column;    
+  }
+
+  .slide-desc-wrapper {
+    height: 110px;
+  }
 }
 
 .dot {
@@ -63,7 +74,7 @@ body {
 
 .dot:hover.active:hover {
   background-color: transparent;
-  border: 2px solid rgb(75, 75, 155);
+  /* border: 2px solid rgb(75, 75, 155); */
 }
 
 .dot:hover {
